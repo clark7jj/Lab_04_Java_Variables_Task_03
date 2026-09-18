@@ -1,6 +1,16 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
+double creditCardBalance = 5000.00;
+double interestRate = 0.17;
+double interestDue = 0.00;
+
+interestDue = creditCardBalance * interestRate/12;
+System.out.println("The interest due after one month is:$ " + interestDue);
+
+creditCardBalance = creditCardBalance + interestDue;
+interestDue = creditCardBalance * interestRate/12;
+System.out.println("The interest due after two months is:$ " + interestDue);
     //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
     // to see how IntelliJ IDEA suggests fixing it.
     IO.println(String.format("Hello and welcome!"));
